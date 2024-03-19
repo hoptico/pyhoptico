@@ -1,6 +1,6 @@
 [tool.poetry]
 name = "pyhoptico"
-version = "0.1.0"
+version = "0.1.1"
 description = "Python client for the Hoptico website."
 authors = ["Hoptico <no-reply@hoptico.com>"]
 license = "MIT"
