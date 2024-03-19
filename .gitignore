@@ -1,0 +1,11 @@
+*.DS_Store
+*.pyc
+*.egg
+*.egg-info
+.coverage
+.vscode
+build/
+dist/
+.pytest_cache/
+.ruff_cache/
+tmp/
