@@ -60,6 +60,15 @@ class HopticoClient:
             },
         )
 
+    def get_beverage(self, beverage_id):
+        return self._get(f"api/v1/beverages/{beverage_id}")
+
+    def get_beverage_producer(self, beverage_producer_id):
+        return self._get(f"api/v1/beverage-producers/{beverage_producer_id}")
+
+    def get_beverage_style(self, beverage_style_id):
+        return self._get(f"api/v1/beverage-styles/{beverage_style_id}")
+
     def create_or_update_beverage(
         self,
         *,
