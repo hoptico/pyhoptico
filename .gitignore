@@ -4,6 +4,7 @@
 *.egg-info
 .coverage
 .vscode
+.tox/
 build/
 dist/
 .pytest_cache/
