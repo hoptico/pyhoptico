@@ -71,6 +71,9 @@ class HopticoClient:
         beverage_style_name,
         abv_percent,
         ibu,
+        beermenus_url=None,
+        ratebeer_url=None,
+        untappd_url=None,
     ):
         data = {
             "name": name,
@@ -85,4 +88,10 @@ class HopticoClient:
             data["ibu"] = ibu
         if origin_iso3166 is not None:
             data["origin_iso3166"] = origin_iso3166
+        if beermenus_url:
+            data["beermenus_url"] = beermenus_url
+        if ratebeer_url:
+            data["ratebeer_url"] = ratebeer_url
+        if untappd_url:
+            data["untappd_url"] = untappd_url
         return self._post("api/v1/beverages/create-or-update", json=data)
