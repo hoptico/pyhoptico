@@ -68,6 +68,9 @@ class HopticoClient:
 
     def get_beverage_style(self, beverage_style_id):
         return self._get(f"api/v1/beverage-styles/{beverage_style_id}")
+    
+    def hit_beverage(self, beverage_id):
+        return self._post(f"api/v1/beverages/{beverage_id}/hit")
 
     def create_or_update_beverage(
         self,
